@@ -6,7 +6,7 @@
             "description": "Product description 1",
             "price": 99.99,
             "currency": "USD",
-            "image": "https://via.placeholder.com/200",
+            "image": "https://productimage001.bever.nl/productimages/989x1484/albad70009_4141_01_nl.jpg",
             "rating": 4.5
         },
         {
@@ -15,7 +15,7 @@
             "description": "Product description 2",
             "price": 99.99,
             "currency": "USD",
-            "image": "https://via.placeholder.com/200",
+            "image": "https://www.fjallraven.com/4afe53/globalassets/catalogs/fjallraven/f8/f866/f86666/f534/vardag_trousers_m_86666-534_a_main_fjr.jpg?width=680&height=680&mode=BoxPad&bgcolor=fff&quality=80",
             "rating": 4.5
         },
         {
@@ -24,7 +24,7 @@
             "description": "Product description 3",
             "price": 99.99,
             "currency": "USD",
-            "image": "https://via.placeholder.com/200",
+            "image": "https://productimage001.bever.nl/productimages/989x1484/albad70009_4141_01_nl.jpg",
             "rating": 4.5
         },
         {
@@ -33,7 +33,7 @@
             "description": "Product description 4",
             "price": 99.99,
             "currency": "USD",
-            "image": "https://via.placeholder.com/200",
+            "image": "https://www.fjallraven.com/4aad59/globalassets/catalogs/fjallraven/f8/f866/f86666/f620/vardag_trousers_m_86666-620_a_main_fjr.jpg?width=2000&height=2000&mode=BoxPad&bgcolor=fff&quality=80",
             "rating": 4.5
         },
         {
@@ -42,7 +42,7 @@
             "description": "Product description 5",
             "price": 99.99,
             "currency": "USD",
-            "image": "https://via.placeholder.com/200",
+            "image": "https://www.fjallraven.com/4afe53/globalassets/catalogs/fjallraven/f8/f866/f86666/f534/vardag_trousers_m_86666-534_a_main_fjr.jpg?width=680&height=680&mode=BoxPad&bgcolor=fff&quality=80",
             "rating": 4.5
         },
         {
@@ -51,7 +51,7 @@
             "description": "Product description 6",
             "price": 99.99,
             "currency": "USD",
-            "image": "https://via.placeholder.com/200",
+            "image": "https://productimage001.bever.nl/productimages/989x1484/albad70009_4141_01_nl.jpg",
             "rating": 4.5
         }
     ]

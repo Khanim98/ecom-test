@@ -1,15 +1,12 @@
 import ProductItem from "./ProductItem";
-const ProductListing = () => {
+
+
+const ProductListing = ({products}) => {
     return ( 
         <div className="filtered-products">
-            <ProductItem /> 
-            <ProductItem /> 
-            <ProductItem /> 
-            <ProductItem /> 
-            <ProductItem /> 
-            <ProductItem /> 
-            <ProductItem /> 
-            <ProductItem /> 
+            {products.map(product => {
+                return <ProductItem product={product} key={product.id} />
+            })}
         </div>
      );
 }

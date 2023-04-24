@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Product Name",
-            "description": "Product description",
+            "description": "Product description 1",
             "price": 99.99,
             "currency": "USD",
             "image": "https://via.placeholder.com/200",
@@ -12,7 +12,7 @@
         {
             "id": 2,
             "title": "Product Name",
-            "description": "Product description",
+            "description": "Product description 2",
             "price": 99.99,
             "currency": "USD",
             "image": "https://via.placeholder.com/200",
@@ -21,7 +21,7 @@
         {
             "id": 3,
             "title": "Product Name",
-            "description": "Product description",
+            "description": "Product description 3",
             "price": 99.99,
             "currency": "USD",
             "image": "https://via.placeholder.com/200",
@@ -30,7 +30,25 @@
         {
             "id": 4,
             "title": "Product Name",
-            "description": "Product description",
+            "description": "Product description 4",
+            "price": 99.99,
+            "currency": "USD",
+            "image": "https://via.placeholder.com/200",
+            "rating": 4.5
+        },
+        {
+            "id": 5,
+            "title": "Product Name",
+            "description": "Product description 5",
+            "price": 99.99,
+            "currency": "USD",
+            "image": "https://via.placeholder.com/200",
+            "rating": 4.5
+        },
+        {
+            "id": 6,
+            "title": "Product Name",
+            "description": "Product description 6",
             "price": 99.99,
             "currency": "USD",
             "image": "https://via.placeholder.com/200",

@@ -1,0 +1,28 @@
+.filtered-page{
+    .filtering-functions{
+
+    }
+
+    .filtered-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .product-card{
+            border: 1px solid gray;
+            height: 420px;
+            width: 250px;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            height: 350px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .product-info{
+            padding: 3px;
+            border-top: 1px solid gray;
+        }
+          
+    }
+}

@@ -13,7 +13,7 @@ const ProductItem = ({product}) => {
             <div className="product-info">
                 <div className="product-title">{product.title}</div>
                 <div className="product-price">{formattedPrice}</div>
-                <div className="product-price">{truncatedDescription}</div>
+                <div className="product-description">{truncatedDescription}</div>
             </div>
         </div>
      );

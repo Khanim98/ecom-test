@@ -10,14 +10,16 @@ function App() {
     fetch(`https://my-json-server.typicode.com/khanim98/starfund-ecom-test/products?page=${page}&limit=10`)
     .then(response => response.json())
     .then((data) => {
-  console.log(data)
-      setProducts((prevProducts) => [...prevProducts, ...data]);
+      if (data) {
+        setProducts((prevProducts) => [...prevProducts, ...data]);
+      }
     })
     .catch((error) => console.log(error));
     console.log(page)
   },[page]);
 
   function handleLoadMore() {
+    console.log("here")
     setPage((prevPage) => prevPage + 1);
   }
 

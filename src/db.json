@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Product Name",
+        "description": "Product description",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MX472?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1570119347612",
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "title": "Product Name",
+        "description": "Product description",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.5
+    },
+    {
+        "id": 3,
+        "title": "Product Name",
+        "description": "Product description",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.5
+    },
+    {
+        "id": 4,
+        "title": "Product Name",
+        "description": "Product description",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/200",
+        "rating": 4.5
+    }
+    
+]

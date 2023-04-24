@@ -3,18 +3,29 @@ import ProductListing from "./components/ProductListing";
 import "./App.scss";
 
 function App() {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState([]);
+  const [page, setPage] = useState(1);
+  
   useEffect(()=> {
-    fetch("https://my-json-server.typicode.com/khanim98/starfund-ecom-test/products")
+    fetch(`https://my-json-server.typicode.com/khanim98/starfund-ecom-test/products?page=${page}&limit=10`)
     .then(response => response.json())
-    .then(data => setProducts(data))
-    .catch(error => console.error(error));
-  },[])
+    .then((data) => {
+  console.log(data)
+      setProducts((prevProducts) => [...prevProducts, ...data]);
+    })
+    .catch((error) => console.log(error));
+    console.log(page)
+  },[page]);
+
+  function handleLoadMore() {
+    setPage((prevPage) => prevPage + 1);
+  }
 
   return (
     <div className="filtered-page">
       <div className="filtering-functions">Filtering functions</div>
-      {products && <ProductListing products={products}/>}
+      <ProductListing products={products}/>
+      <button onClick={handleLoadMore}>Load More...</button>
     </div>
   );
 }

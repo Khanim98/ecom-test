@@ -4,7 +4,8 @@ const ProductItem = ({product}) => {
         style: "currency",
         currency: product.currency,
       });
-    
+    let rating = stars => `★★★★★☆☆☆☆☆`.slice(5 - stars, 10 - stars);
+
     return ( 
         <div className="product-card">
             <div className="product-image">
@@ -14,6 +15,7 @@ const ProductItem = ({product}) => {
                 <div className="product-title">{product.title}</div>
                 <div className="product-price">{formattedPrice}</div>
                 <div className="product-description">{truncatedDescription}</div>
+                <div className="product-rating">{rating(product.rating)}</div>
             </div>
         </div>
      );

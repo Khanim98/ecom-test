@@ -7,7 +7,7 @@ function App() {
   // const [page, setPage] = useState(1);
   
   useEffect(()=> {
-    fetch(`https://my-json-server.typicode.com/khanimpasha/ecom-starfund/products`)
+    fetch('https://my-json-server.typicode.com/khanimpasha/ecom-starfund/products')
     .then(response => response.json())
     .then((data) => {
       setProducts(data)

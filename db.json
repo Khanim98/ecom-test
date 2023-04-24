@@ -2,26 +2,26 @@
     "products": [
         {
             "id": 1,
-            "title": "Product Name",
-            "description": "Product description 1",
-            "price": 99.99,
+            "title": "Trousers Jeans blue",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "price": 160.99,
             "currency": "USD",
             "image": "https://productimage001.bever.nl/productimages/989x1484/albad70009_4141_01_nl.jpg",
             "rating": 4.5
         },
         {
             "id": 2,
-            "title": "Product Name",
-            "description": "Product description 2",
+            "title": "Trousers Jeans lightblue",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "price": 99.99,
             "currency": "USD",
             "image": "https://www.fjallraven.com/4afe53/globalassets/catalogs/fjallraven/f8/f866/f86666/f534/vardag_trousers_m_86666-534_a_main_fjr.jpg?width=680&height=680&mode=BoxPad&bgcolor=fff&quality=80",
-            "rating": 4.5
+            "rating": 2.5
         },
         {
             "id": 3,
-            "title": "Product Name",
-            "description": "Product description 3",
+            "title": "Trousers Jeans blue",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "price": 99.99,
             "currency": "USD",
             "image": "https://productimage001.bever.nl/productimages/989x1484/albad70009_4141_01_nl.jpg",
@@ -29,30 +29,30 @@
         },
         {
             "id": 4,
-            "title": "Product Name",
-            "description": "Product description 4",
-            "price": 99.99,
+            "title": "Jeans long brown",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "price": 19.99,
             "currency": "USD",
             "image": "https://www.fjallraven.com/4aad59/globalassets/catalogs/fjallraven/f8/f866/f86666/f620/vardag_trousers_m_86666-620_a_main_fjr.jpg?width=2000&height=2000&mode=BoxPad&bgcolor=fff&quality=80",
             "rating": 4.5
         },
         {
             "id": 5,
-            "title": "Product Name",
-            "description": "Product description 5",
-            "price": 99.99,
+            "title": "Trousers Jeans lightblue",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "price": 100.99,
             "currency": "USD",
             "image": "https://www.fjallraven.com/4afe53/globalassets/catalogs/fjallraven/f8/f866/f86666/f534/vardag_trousers_m_86666-534_a_main_fjr.jpg?width=680&height=680&mode=BoxPad&bgcolor=fff&quality=80",
-            "rating": 4.5
+            "rating": 5
         },
         {
             "id": 6,
-            "title": "Product Name",
-            "description": "Product description 6",
+            "title": "Trousers Jeans blue",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "price": 99.99,
             "currency": "USD",
             "image": "https://productimage001.bever.nl/productimages/989x1484/albad70009_4141_01_nl.jpg",
-            "rating": 4.5
+            "rating": 3.5
         }
     ]
 }

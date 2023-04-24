@@ -1,39 +1,40 @@
-[
-    {
-        "id": 1,
-        "title": "Product Name",
-        "description": "Product description",
-        "price": 99.99,
-        "currency": "USD",
-        "image": "https://via.placeholder.com/200",
-        "rating": 4.5
-    },
-    {
-        "id": 2,
-        "title": "Product Name",
-        "description": "Product description",
-        "price": 99.99,
-        "currency": "USD",
-        "image": "https://via.placeholder.com/200",
-        "rating": 4.5
-    },
-    {
-        "id": 3,
-        "title": "Product Name",
-        "description": "Product description",
-        "price": 99.99,
-        "currency": "USD",
-        "image": "https://via.placeholder.com/200",
-        "rating": 4.5
-    },
-    {
-        "id": 4,
-        "title": "Product Name",
-        "description": "Product description",
-        "price": 99.99,
-        "currency": "USD",
-        "image": "https://via.placeholder.com/200",
-        "rating": 4.5
-    }
-    
-]
+{   
+    "products": [
+        {
+            "id": 1,
+            "title": "Product Name",
+            "description": "Product description",
+            "price": 99.99,
+            "currency": "USD",
+            "image": "https://via.placeholder.com/200",
+            "rating": 4.5
+        },
+        {
+            "id": 2,
+            "title": "Product Name",
+            "description": "Product description",
+            "price": 99.99,
+            "currency": "USD",
+            "image": "https://via.placeholder.com/200",
+            "rating": 4.5
+        },
+        {
+            "id": 3,
+            "title": "Product Name",
+            "description": "Product description",
+            "price": 99.99,
+            "currency": "USD",
+            "image": "https://via.placeholder.com/200",
+            "rating": 4.5
+        },
+        {
+            "id": 4,
+            "title": "Product Name",
+            "description": "Product description",
+            "price": 99.99,
+            "currency": "USD",
+            "image": "https://via.placeholder.com/200",
+            "rating": 4.5
+        }
+    ]
+}

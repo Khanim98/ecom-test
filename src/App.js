@@ -7,12 +7,13 @@ function App() {
   const [page, setPage] = useState(1);
   
   useEffect(()=> {
-    fetch(`https://my-json-server.typicode.com/khanim98/starfund-ecom-test/products?page=${page}&limit=10`)
+    fetch(`https://my-json-server.typicode.com/khanim98/ecom-starfund/products`)
     .then(response => response.json())
     .then((data) => {
-      if (data) {
-        setProducts((prevProducts) => [...prevProducts, ...data]);
-      }
+      setProducts(data)
+      // if (data) {
+      //   setProducts((prevProducts) => [...prevProducts, ...data]);
+      // }
     })
     .catch((error) => console.log(error));
     console.log(page)

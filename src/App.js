@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext, createContext } from "react";
 import ProductListing from "./components/ProductListing";
 import "./App.scss";
 import { debounce } from "lodash";
 import { ShoppingCartOutlined } from '@ant-design/icons';
 
+export const ProductCountContext = createContext();
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -12,10 +13,10 @@ function App() {
   const [page, setPage] = useState(1);
   const [lastPage, setLastPage] = useState(false);
   const productsContainerRef = useRef(null);
-  const [productCount, setProductCount] = useState(0);
+  const [count, setCount] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
-    console.log(page)
     fetch(`https://6447740550c25337442518f8.mockapi.io/api/products?page=${page}&limit=10`)
       .then((response) => response.json())
       .then((data) => {
@@ -74,6 +75,11 @@ function App() {
     }
   },200);
 
+  const addToCart = (price, currency) => {
+    let convertedToUsd = currency === "EUR" ? price * 1.1 : price;
+    setCount(count + 1);
+    setTotalPrice(prev => +(prev + convertedToUsd).toFixed(2));
+  }
 
 
   return (
@@ -81,11 +87,14 @@ function App() {
       <div className="header">
         <div className="header-items">
           <div>logo</div>
-          <div className="cart">
-            <div className="added-products-count">{productCount}</div>
-            <ShoppingCartOutlined 
-              style={{fontSize: "30px", color: "#161616"}}
-            />
+          <div className="cart-area">
+            <div className="cart">
+              <div className="added-products-count">{count}</div>
+              <ShoppingCartOutlined 
+                style={{fontSize: "30px", color: "#161616"}}
+              />
+              <div className="total-price">Total: {totalPrice} $</div>
+            </div>
           </div>
         </div>
       </div>
@@ -108,7 +117,11 @@ function App() {
             </div>
           </div>
         </div>
-        {filteredProducts && <ProductListing products={filteredProducts}/>}
+        {filteredProducts && 
+        <ProductCountContext.Provider value={{ addToCart }}>
+          <ProductListing products={filteredProducts}/>
+        </ProductCountContext.Provider>
+        }
       </div>
     </div>
   );

@@ -17,7 +17,10 @@
             padding: 0 40px;
             justify-content: space-between;
             width: 100%;
-            .cart{
+            @media(max-width: 600px) {
+                padding: 0 15px;
+            }
+            .cart-area{
                 position: relative;
             }
             .added-products-count {
@@ -33,12 +36,21 @@
                 font-size: 11px;
                 background: #afafaf;
             }
+            .total-price {
+                position: absolute;
+                width: 300px;
+                right: 0px;
+                text-align: end;
+            }
         }
     }
     .filtering-functions {
         display: flex;
         justify-content: space-between;
         padding: 30px 40px 0 40px;
+        @media(max-width: 600px) {
+            padding: 15px 10px 0 10px
+        }
         .search{
             input{
                 width: 300px;
@@ -49,17 +61,23 @@
                 &:focus, &:active{
                     outline: none;
                 }
+                @media(max-width: 600px) {
+                    width: 180px;
+                }
             }
         }
         select:focus, select:active{
             outline: none
         }
         #category-list{
-            height: 40px;
+            height: 36px;
             width: 150px;
             padding: 3px;
             border-radius: 3px;
             border: 1px solid #949494;
+            @media(max-width: 600px) {
+                width: 100px;
+            }
         }
     }
     .filtered-products{
@@ -89,6 +107,7 @@
             border-top: 1px solid gray;
             font-size: 14px;
             position: relative;
+            height: 133px;
             .product-title {
                 font-size: 16px;
                 font-weight: bold;
@@ -102,7 +121,7 @@
                 height: 30px;
                 position: absolute;
                 right: 10px;
-                bottom: -13px;
+                bottom: 7px;
                 cursor: pointer;
                 border: 2px solid #00be66;
                 border-radius: 3px;

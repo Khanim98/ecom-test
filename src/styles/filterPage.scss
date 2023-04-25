@@ -1,8 +1,22 @@
 .filtered-page{
-    .filtering-functions{
-
+    .filtering-functions {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        border-bottom: 1px solid gray;
+        .search{
+            input{
+                width: 300px;
+                height: 35px;
+                padding-left: 5px;
+                border-radius: 3px;
+                border: 1px solid gray;
+                &:focus, &:active{
+                    outline: none;
+                }
+            }
+        }
     }
-
     .filtered-products{
         display: flex;
         flex-wrap: wrap;

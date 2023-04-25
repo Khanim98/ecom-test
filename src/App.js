@@ -3,29 +3,38 @@ import ProductListing from "./components/ProductListing";
 import "./App.scss";
 
 function App() {
-  const [products, setProducts] = useState([]);
-  const [page, setPage] = useState(1);
-  
+  const [products, setProducts] = useState(null);
+  const [searchQuery, setSearchQuery] = useState("");
+  const options = {
+    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+    maxContentLength: 100000000,
+    maxBodyLength: 1000000000
+  }
   useEffect(()=> {
-    fetch(`https://my-json-server.typicode.com/khanimpasha/ecom-starfund/products?_page=${page}&_limit=10`)
+    fetch(`https://my-json-server.typicode.com/khanimpasha/ecom-starfund/products`, options)
     .then(response => response.json())
-    .then(data => setProducts(() => [...data]))
+    .then(data => {setProducts(data)})
     .catch((error) => console.log(error));
-  },[page]);
+  },[]);
 
-  const handleLoadMore = () => {
-    setPage(prevPage => prevPage + 1);
+  const handleSearchInputChange = (e) => {
+    setSearchQuery(e.target.value);
   };
+
+  const filteredProducts = Array.isArray(products) && products.filter((product) => {
+    return product.title.toLowerCase().includes(searchQuery.toLowerCase());
+  });
+
 
   return (
     <div className="filtered-page">
-      <div className="filtering-functions">Filtering functions</div>
-      {products && <ProductListing products={products}/>}
-      {products.length > 0 && (
-        <button className="load-more-btn" onClick={handleLoadMore}>
-          Load More
-        </button>
-      )}
+      <div className="filtering-functions">
+        <div className="search">
+          <input placeholder="Search product.." onChange={handleSearchInputChange}/>
+        </div>
+        <div className="filter-by">filter</div>
+      </div>
+      {filteredProducts && <ProductListing products={filteredProducts}/>}
     </div>
   );
 }
